@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { Artwork, ROOM_MOCKUP_PRESETS } from '@/lib/artworks';
+import { Artwork, ROOM_MOCKUP_PRESETS, BASE_PATH } from '@/lib/artworks';
 import { ZoomIn, Home, Layers, Sun, Moon, Maximize2 } from 'lucide-react';
 
 export function ArtworkInteractiveViewer({ artwork }: { artwork: Artwork }) {
@@ -144,7 +144,7 @@ export function ArtworkInteractiveViewer({ artwork }: { artwork: Artwork }) {
           >
             {/* Higgsfield Architectural Gallery Interior Background */}
             <img
-              src="/artworks/gallery-interior-staging.png"
+              src={`${BASE_PATH}/artworks/gallery-interior-staging.png`}
               alt="Architectural Room Staging Backdrop"
               className={`absolute inset-0 w-full h-full object-cover transition-all duration-700 ${
                 warmLighting ? 'brightness-95 sepia-[0.12]' : 'brightness-100 saturate-75'
