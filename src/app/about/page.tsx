@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { ArrowRight, Award, Globe2, Layers, ShieldCheck } from 'lucide-react';
+import { BASE_PATH } from '@/lib/artworks';
 
 export default function AboutArtistPage() {
   return (
@@ -20,7 +21,7 @@ export default function AboutArtistPage() {
 
         <div className="lg:col-span-5 bg-[#FAFAFA] border border-[#E5E5E5] p-6 space-y-3">
           <img
-            src="/artworks/hero-impasto-macro.png"
+            src={`${BASE_PATH}/artworks/hero-impasto-macro.png`}
             alt="Raking light macro view of studio oil impasto"
             className="w-full aspect-[16/10] object-cover"
           />
