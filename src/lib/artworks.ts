@@ -1,3 +1,5 @@
+export const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH || '';
+
 export type PriceTier =
   | 'Tier 1: Collector Entry & Study Works'
   | 'Tier 2: Signature Series'
@@ -95,8 +97,8 @@ export const ARTWORKS: Artwork[] = [
     framing: 'Hand-rubbed darkened bronze shadow-gap floater frame included',
     crating: 'Custom ISPM-15 museum wooden crate with climate barrier',
     weightKg: 26,
-    imageUrl: '/artworks/silence-in-ochre.png',
-    macroImageUrl: '/artworks/hero-impasto-macro.png',
+    imageUrl: `${BASE_PATH}/artworks/silence-in-ochre.png`,
+    macroImageUrl: `${BASE_PATH}/artworks/hero-impasto-macro.png`,
     dominantPalette: ['#9A7B4F', '#2B2623', '#EAE3D5', '#6E5233'],
     featured: true,
     shortExcerpt:
@@ -142,8 +144,8 @@ export const ARTWORKS: Artwork[] = [
     framing: 'Unframed museum gallery wrap with painted charcoal edges (custom framing available on inquiry)',
     crating: 'Custom museum wooden crate included',
     weightKg: 19,
-    imageUrl: '/artworks/nocturne-monolith.png',
-    macroImageUrl: '/artworks/hero-impasto-macro.png',
+    imageUrl: `${BASE_PATH}/artworks/nocturne-monolith.png`,
+    macroImageUrl: `${BASE_PATH}/artworks/hero-impasto-macro.png`,
     dominantPalette: ['#15171A', '#2B333E', '#DFDCD4', '#5A5852'],
     featured: true,
     shortExcerpt:
@@ -186,8 +188,8 @@ export const ARTWORKS: Artwork[] = [
     framing: 'Solid European oak minimalist floater frame',
     crating: 'Reinforced wooden art box with high-density foam suspension',
     weightKg: 14,
-    imageUrl: '/artworks/ephemeral-horizon.png',
-    macroImageUrl: '/artworks/hero-impasto-macro.png',
+    imageUrl: `${BASE_PATH}/artworks/ephemeral-horizon.png`,
+    macroImageUrl: `${BASE_PATH}/artworks/hero-impasto-macro.png`,
     dominantPalette: ['#E8E4DC', '#7D827B', '#9A7B4F', '#3A3B37'],
     featured: true,
     shortExcerpt:
@@ -230,8 +232,8 @@ export const ARTWORKS: Artwork[] = [
     framing: 'Warm brushed blackened aluminum gallery frame',
     crating: 'Museum-grade reinforced flight box',
     weightKg: 8.5,
-    imageUrl: '/artworks/study-in-mineral-vii.png',
-    macroImageUrl: '/artworks/hero-impasto-macro.png',
+    imageUrl: `${BASE_PATH}/artworks/study-in-mineral-vii.png`,
+    macroImageUrl: `${BASE_PATH}/artworks/hero-impasto-macro.png`,
     dominantPalette: ['#C27D5A', '#F1ECE1', '#22201E', '#8E735B'],
     featured: true,
     shortExcerpt:
@@ -270,8 +272,8 @@ export const ARTWORKS: Artwork[] = [
     framing: 'Bespoke architectural bronze reveal frame',
     crating: 'Dual-chamber international air-freight museum crate with white-glove installation guide',
     weightKg: 48,
-    imageUrl: '/artworks/silence-in-ochre.png',
-    macroImageUrl: '/artworks/hero-impasto-macro.png',
+    imageUrl: `${BASE_PATH}/artworks/silence-in-ochre.png`,
+    macroImageUrl: `${BASE_PATH}/artworks/hero-impasto-macro.png`,
     dominantPalette: ['#1A1918', '#9A7B4F', '#DCD6CA', '#4A3F35'],
     featured: false,
     shortExcerpt:
@@ -318,8 +320,8 @@ export const ARTWORKS: Artwork[] = [
     framing: 'Aged bronze floater frame',
     crating: 'Custom ISPM-15 museum wooden crate',
     weightKg: 21,
-    imageUrl: '/artworks/nocturne-monolith.png',
-    macroImageUrl: '/artworks/hero-impasto-macro.png',
+    imageUrl: `${BASE_PATH}/artworks/nocturne-monolith.png`,
+    macroImageUrl: `${BASE_PATH}/artworks/hero-impasto-macro.png`,
     dominantPalette: ['#2C2A29', '#C8BFA8', '#786856'],
     featured: false,
     shortExcerpt:
