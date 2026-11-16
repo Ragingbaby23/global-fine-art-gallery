@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { getCatalogArtworks } from '@/lib/shopify';
-import { formatUsd } from '@/lib/artworks';
+import { formatUsd, BASE_PATH } from '@/lib/artworks';
 import { ArtworkCard } from '@/components/ArtworkCard';
 import {
   ArrowRight,
@@ -23,7 +23,7 @@ export default async function HomePage() {
       <section className="relative bg-[#111111] text-[#FFFFFF] overflow-hidden border-b border-[#E5E5E5]">
         <div className="absolute inset-0 overflow-hidden opacity-55">
           <img
-            src="/artworks/hero-impasto-macro.png"
+            src={`${BASE_PATH}/artworks/hero-impasto-macro.png`}
             alt="Macro Oil Impasto and 23k Bronze Leaf Brushwork"
             className="w-full h-full object-cover animate-higgsfield-camera"
           />
@@ -32,7 +32,7 @@ export default async function HomePage() {
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-8 py-24 sm:py-32 lg:py-40 grid grid-cols-1 lg:grid-cols-12 gap-12 items-end">
           <div className="lg:col-span-8 space-y-6">
-            <div className="inline-flex items-center gap-2.5 px-3.5 py-1.5 bg-[#000000]/70 border border-[#9A7B4F]/60 text-[11px] tracking-[2px] uppercase text-[#FAFAFA]">
+            <div className="inline-flex items-center gap-2.5 px-3.5 py-1.5 bg-[#000000]/70 border border-[#9A7B4F]/60 text-[11px] tracking-[0.2em] uppercase text-[#FAFAFA]">
               <span className="w-2 h-2 rounded-full bg-[#9A7B4F]" />
               <span>2026 Private Viewing Room • Direct From Studio</span>
             </div>
@@ -128,7 +128,7 @@ export default async function HomePage() {
           <div className="lg:col-span-5 space-y-5">
             <div className="relative aspect-[4/5] border border-[#E5E5E5] bg-[#FFFFFF] p-6 shadow-xs">
               <img
-                src="/artworks/silence-in-ochre.png"
+                src={`${BASE_PATH}/artworks/silence-in-ochre.png`}
                 alt="Atelier Vance Studio Monograph"
                 className="w-full h-full object-cover"
               />
